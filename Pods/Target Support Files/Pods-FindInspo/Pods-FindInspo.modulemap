@@ -1,0 +1,6 @@
+framework module Pods_FindInspo {
+  umbrella header "Pods-FindInspo-umbrella.h"
+
+  export *
+  module * { export * }
+}

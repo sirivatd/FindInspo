@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9563EA7E21255901009348BD /* ScrapeExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563EA7D21255901009348BD /* ScrapeExampleViewController.swift */; };
+		957F59B521258144005AC1C5 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59B421258144005AC1C5 /* LandingViewController.swift */; };
+		957F59B721259DB7005AC1C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59B621259DB7005AC1C5 /* HomeViewController.swift */; };
+		957F59BC2125B7E8005AC1C5 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59BB2125B7E8005AC1C5 /* FindViewController.swift */; };
+		957F59BE2125C3B6005AC1C5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */; };
 		95BBCB5E210D414C00047CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB5D210D414C00047CD7 /* AppDelegate.swift */; };
 		95BBCB60210D414C00047CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB5F210D414C00047CD7 /* ViewController.swift */; };
 		95BBCB63210D414C00047CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BBCB61210D414C00047CD7 /* Main.storyboard */; };
@@ -19,6 +24,13 @@
 		95BBCB90210E541900047CD7 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB8F210E541900047CD7 /* ExploreViewController.swift */; };
 		95BBCB92210E59D700047CD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95BBCB91210E59D600047CD7 /* GoogleService-Info.plist */; };
 		95BBCB94210E59E900047CD7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 95BBCB93210E59E900047CD7 /* Podfile */; };
+		95BBCB96210E5BE100047CD7 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB95210E5BE100047CD7 /* InputViewController.swift */; };
+		95BBCB98210E5E4000047CD7 /* Influencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB97210E5E4000047CD7 /* Influencer.swift */; };
+		95BBCB9A210EB4DA00047CD7 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB99210EB4DA00047CD7 /* InstagramViewController.swift */; };
+		95BBCB9C210EC83D00047CD7 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB9B210EC83D00047CD7 /* CategoryTableViewCell.swift */; };
+		95BBCB9E210ECAF600047CD7 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB9D210ECAF600047CD7 /* MatchViewController.swift */; };
+		95BBCBA0210ECEC100047CD7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB9F210ECEC100047CD7 /* CategoryViewController.swift */; };
+		95BBCBA2210EE9AD00047CD7 /* InfluencerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCBA1210EE9AD00047CD7 /* InfluencerCollectionViewCell.swift */; };
 		CEF770245627989FB5EBFEAA /* Pods_FindInspo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3241494F99700BBD69FAB18B /* Pods_FindInspo.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +55,11 @@
 		3241494F99700BBD69FAB18B /* Pods_FindInspo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindInspo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AD1275CA2140E00EA61B0A /* Pods-FindInspo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindInspo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindInspo/Pods-FindInspo.debug.xcconfig"; sourceTree = "<group>"; };
 		566316325BE01AF7631468C7 /* Pods-FindInspo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindInspo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindInspo/Pods-FindInspo.release.xcconfig"; sourceTree = "<group>"; };
+		9563EA7D21255901009348BD /* ScrapeExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapeExampleViewController.swift; sourceTree = "<group>"; };
+		957F59B421258144005AC1C5 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		957F59B621259DB7005AC1C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		957F59BB2125B7E8005AC1C5 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		95BBCB5A210D414C00047CD7 /* FindInspo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindInspo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BBCB5D210D414C00047CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BBCB5F210D414C00047CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +77,14 @@
 		95BBCB8D210D8E7700047CD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95BBCB8F210E541900047CD7 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		95BBCB91210E59D600047CD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		95BBCB93210E59E900047CD7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		95BBCB93210E59E900047CD7 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95BBCB95210E5BE100047CD7 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		95BBCB97210E5E4000047CD7 /* Influencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Influencer.swift; sourceTree = "<group>"; };
+		95BBCB99210EB4DA00047CD7 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		95BBCB9B210EC83D00047CD7 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		95BBCB9D210ECAF600047CD7 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		95BBCB9F210ECEC100047CD7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		95BBCBA1210EE9AD00047CD7 /* InfluencerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +157,18 @@
 				95BBCB91210E59D600047CD7 /* GoogleService-Info.plist */,
 				95BBCB8D210D8E7700047CD7 /* LoginViewController.swift */,
 				95BBCB8F210E541900047CD7 /* ExploreViewController.swift */,
+				95BBCB95210E5BE100047CD7 /* InputViewController.swift */,
+				95BBCB97210E5E4000047CD7 /* Influencer.swift */,
+				95BBCB99210EB4DA00047CD7 /* InstagramViewController.swift */,
+				95BBCB9B210EC83D00047CD7 /* CategoryTableViewCell.swift */,
+				95BBCB9D210ECAF600047CD7 /* MatchViewController.swift */,
+				95BBCB9F210ECEC100047CD7 /* CategoryViewController.swift */,
+				95BBCBA1210EE9AD00047CD7 /* InfluencerCollectionViewCell.swift */,
+				9563EA7D21255901009348BD /* ScrapeExampleViewController.swift */,
+				957F59B421258144005AC1C5 /* LandingViewController.swift */,
+				957F59B621259DB7005AC1C5 /* HomeViewController.swift */,
+				957F59BB2125B7E8005AC1C5 /* FindViewController.swift */,
+				957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */,
 			);
 			path = FindInspo;
 			sourceTree = "<group>";
@@ -303,12 +339,28 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FindInspo/Pods-FindInspo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/AMDots/AMDots.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CTSlidingUpPanel/CTSlidingUpPanel.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InstagramLogin/InstagramLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/SSSpinnerButton/SSSpinnerButton.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMDots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTSlidingUpPanel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSSpinnerButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,9 +410,21 @@
 			files = (
 				95BBCB8E210D8E7700047CD7 /* LoginViewController.swift in Sources */,
 				95BBCB60210D414C00047CD7 /* ViewController.swift in Sources */,
+				9563EA7E21255901009348BD /* ScrapeExampleViewController.swift in Sources */,
 				95BBCB90210E541900047CD7 /* ExploreViewController.swift in Sources */,
+				957F59BC2125B7E8005AC1C5 /* FindViewController.swift in Sources */,
+				95BBCB96210E5BE100047CD7 /* InputViewController.swift in Sources */,
+				957F59B721259DB7005AC1C5 /* HomeViewController.swift in Sources */,
+				95BBCB9E210ECAF600047CD7 /* MatchViewController.swift in Sources */,
 				95BBCB5E210D414C00047CD7 /* AppDelegate.swift in Sources */,
+				95BBCB9A210EB4DA00047CD7 /* InstagramViewController.swift in Sources */,
+				957F59B521258144005AC1C5 /* LandingViewController.swift in Sources */,
+				95BBCBA2210EE9AD00047CD7 /* InfluencerCollectionViewCell.swift in Sources */,
+				95BBCB98210E5E4000047CD7 /* Influencer.swift in Sources */,
 				95BBCB8C210D8D6900047CD7 /* Constants.swift in Sources */,
+				95BBCBA0210ECEC100047CD7 /* CategoryViewController.swift in Sources */,
+				957F59BE2125C3B6005AC1C5 /* QuizViewController.swift in Sources */,
+				95BBCB9C210EC83D00047CD7 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +601,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -553,7 +620,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -569,7 +639,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -586,7 +660,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -602,7 +680,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -618,7 +700,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BWJ7S75KT;
 				INFOPLIST_FILE = FindInspoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.donsirivat.FindInspoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -9,27 +9,56 @@
 import UIKit
 import WebKit
 
-class ExploreViewController: UIViewController, WKNavigationDelegate {
+class ExploreViewController: UIViewController {
     
-    var webView: WKWebView!
-
-    override func loadView() {
-
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func dismissPressed() {
+        self.dismiss(animated: true, completion: nil)
     }
+    
+
+    var categoryImages: [String] = ["category1", "category2", "category3", "category4"]
+    var categories: [String] = ["Beauty","Style","Culture","Health","Wedding","Family"]
+
+    var category: [String]?
+    
+
+    @IBAction func buttonAPressed() {
+        self.category = ["Engagement", "WeddingBells", "WeddinfgPlanning", "WeddingPlanner", "WeddingDress", "weddingshower", "bachelorette", "wifetobe", "weddingphotography", "destinationwedding", "weddingbells", "weddingvenue", "manofmydreams", "womanofmydreams", "maidofhonor", "wedding", "luxurywedding", "luxuryhoneymoon", "dreamwedding", "wedding", "style", "bridetobe", "instawedding", "weddinggoals"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+    }
+    
+    @IBAction func buttonBPressed() {
+        self.category = ["health","fit","workout","gains"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+
+    }
+    
+    @IBAction func buttonCPressed() {
+        self.category = ["culture", "cultured", "travel", "adventure", "paradise", "soul"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+    }
+    
+    @IBAction func buttonDPressed() {
+        self.category = ["beauty", "makeup", "tryon", "cute", "beautiful", "wcw"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+    }
+    
+    @IBAction func buttonEPressed() {
+        self.category = ["style","class","fashion","designer","clothes"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+    }
+    
+    @IBAction func buttonFPressed() {
+        self.category = ["family","familytrips","familymovies","parents"]
+        self.performSegue(withIdentifier: "toFind", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-        let url = URL(string: "https://instagram.com/zoein_wonderland/")!
-        webView.load(URLRequest(url: url))
-        webView.allowsBackForwardNavigationGestures = true
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        
-        toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false
+    
         // Do any additional setup after loading the view.
     }
 
@@ -38,11 +67,17 @@ class ExploreViewController: UIViewController, WKNavigationDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        title = webView.title
-    }
+    //UITableViewMethods
     
 
+    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toFind" {
+            let viewController: FindViewController = segue.destination as! FindViewController
+            viewController.category = self.category!
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,7 @@
 		957F59B721259DB7005AC1C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59B621259DB7005AC1C5 /* HomeViewController.swift */; };
 		957F59BC2125B7E8005AC1C5 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59BB2125B7E8005AC1C5 /* FindViewController.swift */; };
 		957F59BE2125C3B6005AC1C5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */; };
+		95AEE8A82136071A00359492 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AEE8A72136071A00359492 /* ChatViewController.swift */; };
 		95BBCB5E210D414C00047CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB5D210D414C00047CD7 /* AppDelegate.swift */; };
 		95BBCB60210D414C00047CD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BBCB5F210D414C00047CD7 /* ViewController.swift */; };
 		95BBCB63210D414C00047CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BBCB61210D414C00047CD7 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		957F59B621259DB7005AC1C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		957F59BB2125B7E8005AC1C5 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		95AEE8A72136071A00359492 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		95BBCB5A210D414C00047CD7 /* FindInspo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindInspo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BBCB5D210D414C00047CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95BBCB5F210D414C00047CD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				957F59B621259DB7005AC1C5 /* HomeViewController.swift */,
 				957F59BB2125B7E8005AC1C5 /* FindViewController.swift */,
 				957F59BD2125C3B6005AC1C5 /* QuizViewController.swift */,
+				95AEE8A72136071A00359492 /* ChatViewController.swift */,
 			);
 			path = FindInspo;
 			sourceTree = "<group>";
@@ -345,6 +348,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/InstagramLogin/InstagramLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
 				"${BUILT_PRODUCTS_DIR}/SSSpinnerButton/SSSpinnerButton.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -358,6 +363,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstagramLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSSpinnerButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -424,6 +431,7 @@
 				95BBCB8C210D8D6900047CD7 /* Constants.swift in Sources */,
 				95BBCBA0210ECEC100047CD7 /* CategoryViewController.swift in Sources */,
 				957F59BE2125C3B6005AC1C5 /* QuizViewController.swift in Sources */,
+				95AEE8A82136071A00359492 /* ChatViewController.swift in Sources */,
 				95BBCB9C210EC83D00047CD7 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

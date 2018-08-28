@@ -11,5 +11,6 @@ pod 'Kanna'
 pod 'CTSlidingUpPanel'
 pod 'InstagramLogin'
 pod 'SSSpinnerButton'
+pod 'JSQMessagesViewController'
 
 end

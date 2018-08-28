@@ -15,7 +15,11 @@ class FindViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var captionText: UITextView!
     @IBOutlet weak var loader: SSSpinnerButton!
+    @IBOutlet weak var titleLabel: UILabel!
     
+    var timer = Timer()
+
+    var titleName: String?
     var category: [String]?
     
     @IBAction func backPressed() {
@@ -42,6 +46,8 @@ class FindViewController: UIViewController {
                     //self.reloadMatch()
                     self.loader.isHidden = false
                     self.loader.startAnimate(spinnerType: SpinnerType.ballRotateChase, spinnercolor: UIColor.white, complete: nil)
+                    self.reloadMatch()
+                    self.scheduledTimerWithTimeInterval()
                 })
                 return
             }
@@ -53,7 +59,8 @@ class FindViewController: UIViewController {
                     print("THIS IS WHY!!!!!!!!!")
                     self.loader.isHidden = false
                     self.loader.startAnimate(spinnerType: SpinnerType.ballRotateChase, spinnercolor: UIColor.white, complete: nil)
-                    //self.reloadMatch()
+                    self.reloadMatch()
+                    self.scheduledTimerWithTimeInterval()
                     print("Liked card!")
                 })
                 return
@@ -68,9 +75,17 @@ class FindViewController: UIViewController {
         let randomNumber = Int(arc4random_uniform(UInt32(self.category!.count - 1)))
         self.scrapeTags(instagram_tag: category![randomNumber])
         imageView.center = self.view.center
-        imageView.alpha = 1
+        imageView.alpha = 0
         imageView.transform = CGAffineTransform.identity
         
+    }
+    
+    @objc func reloadImage() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.imageView.center = self.view.center
+            self.imageView.alpha = 1
+            self.imageView.transform = CGAffineTransform.identity
+        })
     }
     
     func resetView(sender: UIPanGestureRecognizer) {
@@ -113,6 +128,14 @@ class FindViewController: UIViewController {
         print(node["display_url"])
         
         self.renderImage(givenView: self.imageView, imageString: node["display_url"] as! String)
+        self.imageView.layer.shadowColor = UIColor.black.cgColor
+        self.imageView.layer.shadowOpacity = 1
+        self.imageView.layer.shadowOffset = CGSize.zero
+        self.imageView.layer.shadowRadius = 10
+        self.imageView.layer.borderWidth = 1
+        self.imageView.layer.borderColor = UIColor.clear.cgColor
+        
+        self.imageView.layer.cornerRadius = 5
         self.captionText.text = targetNode["text"] as! String
         
     }
@@ -126,10 +149,17 @@ class FindViewController: UIViewController {
         
         givenView.addGestureRecognizer(panRecognizer)
     }
+    
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.reloadImage), userInfo: nil, repeats: false)
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.titleLabel.text = self.titleName!
         self.loader.isHidden = true
         let randomNumber = Int(arc4random_uniform(UInt32(self.category!.count - 1)))
         self.scrapeTags(instagram_tag: category![randomNumber])

@@ -539,18 +539,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Npa-wb-ARn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FindInspo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unI-Xn-QIs">
-                                        <rect key="frame" x="104" y="28" width="166" height="43"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-u2-bI1">
-                                        <rect key="frame" x="20" y="32" width="35" height="35"/>
+                                        <rect key="frame" x="20" y="13" width="28" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="down-arrow"/>
                                         <connections>
@@ -560,60 +553,96 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-J0-Q0Q">
-                                <rect key="frame" x="0.0" y="79" width="189" height="198"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wedding1" translatesAutoresizingMaskIntoConstraints="NO" id="DSV-GW-N3H">
+                                <rect key="frame" x="0.0" y="53" width="375" height="447"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindWedding"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Na-95-gdE">
+                                <rect key="frame" x="252" y="404" width="123" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="family_btn"/>
                                 <connections>
-                                    <action selector="buttonAPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="0h3-MJ-OkH"/>
+                                    <action selector="buttonFPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="wkh-jH-DPb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gca-dp-g1h">
-                                <rect key="frame" x="0.0" y="275" width="189" height="198"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOC-7q-ixe">
+                                <rect key="frame" x="126" y="404" width="123" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindCulture"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="style_btn"/>
                                 <connections>
-                                    <action selector="buttonCPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="ywd-E1-z8b"/>
+                                    <action selector="buttonEPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="pFe-cy-XZ9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdJ-FW-yC3">
-                                <rect key="frame" x="0.0" y="469" width="189" height="198"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQF-BS-ZlI">
+                                <rect key="frame" x="0.0" y="404" width="123" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindStyle"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="beauty_btn"/>
                                 <connections>
-                                    <action selector="buttonEPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="P14-vB-iZi"/>
+                                    <action selector="buttonDPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="lk2-Nl-vUW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPJ-8c-9nm">
-                                <rect key="frame" x="186" y="79" width="189" height="198"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Want better curation?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWh-Tf-ZR9">
+                                <rect key="frame" x="16" y="512" width="343" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindHealth"/>
+                                <fontDescription key="fontDescription" name="Charter-Black" family="Charter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Take our quiz for personalized results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9T-cc-8u4">
+                                <rect key="frame" x="16" y="540" width="343" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Black" family="Charter" pointSize="17"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZN-Fv-YTi">
+                                <rect key="frame" x="252" y="305" width="123" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="culture_btn">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonBPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="fcz-j5-AUm"/>
+                                    <action selector="buttonCPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="EUg-7x-0iG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeg-ot-7Iu">
-                                <rect key="frame" x="186" y="275" width="189" height="198"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIq-qD-jXE">
+                                <rect key="frame" x="126" y="305" width="123" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindBeauty"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="fit_btn">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonDPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="U7i-Wl-vUy"/>
+                                    <action selector="buttonBPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="bHR-UX-tOL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORi-zo-I7p">
-                                <rect key="frame" x="186" y="469" width="189" height="198"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmh-yH-BTY">
+                                <rect key="frame" x="0.0" y="305" width="123" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="FindFamily"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="wedding_btn">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonFPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="eYA-fb-PTI"/>
+                                    <action selector="buttonAPressed" destination="p9c-vY-3tU" eventType="touchUpInside" id="Tca-2O-f7l"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqH-HK-vMI">
+                                <rect key="frame" x="72" y="588" width="231" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="quiz_btn"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97906996020000003" green="0.97906996020000003" blue="0.97906996020000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fvd-j5-PPD"/>
                     </view>
                     <navigationItem key="navigationItem" id="fKR-JX-zx3"/>
                     <connections>
+                        <outlet property="featuredImg" destination="DSV-GW-N3H" id="Zbq-wg-kHs"/>
                         <segue destination="iJp-cD-wyB" kind="show" identifier="toFind" id="BO9-J7-Cm6"/>
                     </connections>
                 </viewController>
@@ -672,8 +701,13 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cz4-yR-ETM">
+                                        <rect key="frame" x="327" y="32" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="chat"/>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgF-sQ-45C">
-                                        <rect key="frame" x="8" y="31" width="36" height="36"/>
+                                        <rect key="frame" x="8" y="33" width="31" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="back"/>
                                         <connections>
@@ -684,12 +718,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkU-cc-nff">
-                                <rect key="frame" x="21" y="146" width="333" height="374"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T9-PJ-d8E">
-                                <rect key="frame" x="21" y="528" width="333" height="119"/>
+                                <rect key="frame" x="21" y="538" width="333" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -697,13 +727,17 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2Y-ib-GDO" customClass="SSSpinnerButton" customModule="SSSpinnerButton">
-                                <rect key="frame" x="164" y="319" width="46" height="30"/>
+                                <rect key="frame" x="143" y="304" width="90" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkU-cc-nff">
+                                <rect key="frame" x="21" y="130" width="333" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZiM-Uk-1nf"/>
@@ -712,6 +746,7 @@
                         <outlet property="captionText" destination="9T9-PJ-d8E" id="wQ8-0t-06q"/>
                         <outlet property="imageView" destination="IkU-cc-nff" id="XGo-Lb-r1R"/>
                         <outlet property="loader" destination="h2Y-ib-GDO" id="D1a-tP-wUx"/>
+                        <outlet property="titleLabel" destination="6ul-Af-YhF" id="ulB-Y4-NjA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hib-Mc-ACT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -845,6 +880,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzZ-iP-0KW">
+                                <rect key="frame" x="330" y="34" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add"/>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-iC-3Wy">
                                 <rect key="frame" x="0.0" y="82" width="375" height="374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -957,14 +997,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="256" height="256"/>
         <image name="adult-beautiful-brunette-871494" width="2486" height="1657"/>
         <image name="back" width="256" height="256"/>
+        <image name="beauty_btn" width="405" height="313"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="culture_btn" width="810" height="626"/>
         <image name="down-arrow" width="256" height="256"/>
         <image name="down-arrow-inside-a-circle" width="512" height="512"/>
+        <image name="family_btn" width="405" height="313"/>
         <image name="findinspo_button" width="500" height="500"/>
         <image name="findinspo_exploretag" width="181" height="513"/>
         <image name="findinspo_logo" width="327" height="295"/>
         <image name="findinspo_model1" width="290" height="435"/>
         <image name="findinspo_tag" width="282" height="612"/>
+        <image name="fit_btn" width="810" height="626"/>
+        <image name="quiz_btn" width="500" height="150"/>
+        <image name="style_btn" width="810" height="626"/>
+        <image name="wedding1" width="1024" height="768"/>
+        <image name="wedding_btn" width="810" height="626"/>
     </resources>
 </document>

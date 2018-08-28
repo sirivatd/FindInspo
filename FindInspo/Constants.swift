@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct API {
     static let INSTAGRAM_AUTHURL = "https://api.instagram.com/oauth/authorize/"
@@ -15,4 +16,11 @@ struct API {
     static let INSTAGRAM_REDIRECT_URI = "https://elfsight.com/service/generate-instagram-access-token/"
     static let INSTAGRAM_ACCESS_TOKEN = "access_token"
     static let INSTAGRAM_SCOPE = "follower_list+public_content"
+}
+
+struct Constants {
+    struct refs {
+        static let databaseRoot = Database.database().reference()
+        static let databaseChats = databaseRoot.child("chats")
+    }
 }
